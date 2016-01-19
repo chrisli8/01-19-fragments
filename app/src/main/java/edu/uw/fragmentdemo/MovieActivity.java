@@ -58,7 +58,7 @@ public class MovieActivity extends Activity implements MovieFragment.OnMovieSele
         detail.setArguments(bundle);
 
         getFragmentManager().beginTransaction()
-                .replace(R.id.container, new DetailFragment())
+                .replace(R.id.container, detail)
                 .addToBackStack(null)
                 .commit();
     }
